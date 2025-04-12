@@ -1,0 +1,27 @@
+import Foundation
+
+struct Asset: Decodable, Identifiable, Equatable{
+    let id: String
+    let name: String
+    let symbol: String
+    let priceUsd: String
+    let changePercent24Hr: String
+    
+    // Se pasa esto al view para mantener limpio el modelo
+//    var percentage: Double {
+//        Double(changePercent24Hr) ?? 0
+//    }
+//    
+//    var formattedPrice: String {
+//        String(format: "%.2f",  Double(priceUsd) ?? 0)
+//    }
+//    
+//    var formattedPercentage: String {
+//        String(format: "%.2f",  Double(changePercent24Hr) ?? 0)
+//    }
+//    
+//    var iconUrl: URL? {
+//        URL(string: "https://assets.coincap.io/assets/icons/\(symbol.lowercased())@2x.png")
+//    }
+
+}
