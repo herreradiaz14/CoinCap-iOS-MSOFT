@@ -12,7 +12,7 @@ struct AssetList: View {
                     viewModel.assets
                 ) {
                     asset in NavigationLink {
-                        AssetDetailView(asset: asset)
+                        AssetDetailView(viewModel: .init(asset: asset))
                     } label: {
                         AssetView(
                             assetVieState: .init(
